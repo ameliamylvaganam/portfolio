@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+        
+		<title>dear journal,</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="twitter:card" content="summary" />
+		<meta name="twitter:site" content="@ameliamylva" />
+		<meta name="twitter:creator" content="@ameliamylva" />
+		<meta property="og:title" content="dear journal," />
+		<meta property="og:description" content="today I made this website..." />
+		<meta property="og:image" content="references/greendearjournal.png"/>
+		<script src="functions.js"></script>
+
+		<style>
+			body{
+				font-family: "Times New Roman", Times, serif;
+				left-margin: 20px;
+				right-margin: 20px;
+				text-align: left;
+				color: #ffffff;
+	
+			}
+			/* unvisited link */
+			a:link {
+				color: #ffffff;
+				text-decoration: none;
+			}
+
+			/* visited link */
+			a:visited {
+				color: #ffffff;
+				text-decoration: none;
+			}
+
+			/* mouse over link */
+			a:hover {
+				color: #dddddd;
+				text-decoration: none;
+			}
+
+			/* selected link */
+			a:active {
+				color: #ffffff;
+				text-decoration: none;
+			}
+			#footer{
+				font-size: 8px;
+				text-align: center;
+				bottom: 0;
+			}
+			.audioplayer{
+				display: flex; /* create a flex box*/
+				flex-direction: column; /* put flexbox children on a vertical axis*/
+				justify-content: center; /* align items vertically */
+				align-items: center;     /* align items horizontally */
+				height: 75vh; /*vh is the height of your current window(viewport) divided into 100 units - viewport height!*/
+			}
+		</style>
+	</head>
+
+	<body>
+		<h1>dear journal,</h1>
+		<div class="audioplayer">
+			<audio id="audio" controls controlsList="nodownload"> 
+				<script>getStuff()</script>
+				your browser doesn't support the audio element :(
+			</audio>
+		</div>
+		<p id="footer">My friends and I like to read our old journal entries to each other. I used to be uncomfortable revisiting such vivid emblems of who I used to be, but I've grown to see old journals as a source of comfort. Here I present over 50 different people reading their "journals" (whatever that means to them) aloud to you. If you wanna submit your own audio clip for me to add, click <a href="https://forms.gle/SnQLUrxVcihPoeMv7" target="_blank"><i>this link</i></a> for an anonymous form. Or if you have my number, text me a voice note whenever you want. <3, Amelia</p>
+        </body>
+			
+</html>
