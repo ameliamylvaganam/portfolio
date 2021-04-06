@@ -1,0 +1,58 @@
+body{
+  font-family: "Times New Roman", Times, serif;
+  left-margin: 20px;
+  right-margin: 20px;
+  text-align: center;
+  color: #ffffff;
+
+}
+
+h1{
+  text-align: inherit;
+  letter-spacing: 0.8em;
+}
+
+#footer {
+  font-size: 15px;
+  position: fixed;
+  right: 0;
+  bottom: 0px;
+  transform: translate(-50%, -50%);
+  margin: 0 auto;
+}
+
+/* unvisited link */
+a:link {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+  color: #dddddd;
+  text-decoration: none;
+}
+
+/* selected link */
+a:active {
+  color: #ffffff;
+  text-decoration: none;
+}
+#footer{
+  font-size: 8px;
+  text-align: center;
+  bottom: 0;
+}
+.audioplayer{
+  display: flex; /* create a flex box*/
+  flex-direction: column; /* put flexbox children on a vertical axis*/
+  justify-content: center; /* align items vertically */
+  align-items: center;     /* align items horizontally */
+  height: 75vh; /*vh is the height of your current window(viewport) divided into 100 units - viewport height!*/
+}
