@@ -10,4 +10,4 @@ function randoColor(){
 	var randomcolor = "#"+randr+randg+randb;
 	document.body.style.background = randomcolor;
 }
-setInterval(function changeBackground(){randoColor()},5000);
+setInterval(function changeBackground(){randoColor()},8000);
