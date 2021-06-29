@@ -1,15 +1,12 @@
-body{
-  font-family: "Times New Roman", Times, serif;
-  left-margin: 20px;
-  right-margin: 20px;
-  text-align: center;
-  color: #ffffff;
+*{cursor: url(sunemoji.png), default;}
 
-}
-
-h1{
-  text-align: inherit;
-  letter-spacing: 0.8em;
+body {
+  background-color: hsl(25, 100%, 55%);
+  /color: #ffffff;
+  font-family: "Helvetica", sans-serif;
+  font-size: 1.2em;
+  line-height: 2em;
+  /*cursor: url(sunemoji.png), default;*/
 }
 
 #footer {
@@ -19,6 +16,24 @@ h1{
   bottom: 0px;
   transform: translate(-50%, -50%);
   margin: 0 auto;
+}
+
+#background-image {
+  background-image: url("humidity.jpg");
+  background-color: #cccccc;
+  height: 95vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+h1 {
+  color: inherit;
+  text-align: center;
+  letter-spacing: 0.4em;
+  margin-top: 5px;
+  margin-bottom: 0px;
 }
 
 /* unvisited link */
@@ -35,8 +50,9 @@ a:visited {
 
 /* mouse over link */
 a:hover {
-  color: #dddddd;
+  color: hsl(25, 100%, 55%);
   text-decoration: none;
+  cursor: url(moonemoji.png), pointer;
 }
 
 /* selected link */
@@ -44,15 +60,61 @@ a:active {
   color: #ffffff;
   text-decoration: none;
 }
-#footer{
-  font-size: 8px;
-  text-align: center;
-  bottom: 0;
+
+
+.marquee {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    margin: 0 auto;
+    white-space: nowrap;
+    overflow: hidden;
+    box-sizing: border-box;
+    background: #000000;
+
+    font-size: 90px;
+    letter-spacing: 0.2em;
+    line-height: 120px;
+    z-index: 99999999;
 }
-.audioplayer{
-  display: flex; /* create a flex box*/
-  flex-direction: column; /* put flexbox children on a vertical axis*/
-  justify-content: center; /* align items vertically */
-  align-items: center;     /* align items horizontally */
-  height: 75vh; /*vh is the height of your current window(viewport) divided into 100 units - viewport height!*/
+
+.marquee span {
+    display: inline-block;
+    padding-left: 150%;
+    will-change: transform;
+    animation: marquee 10s linear infinite;
+}
+
+.marquee span a {
+    text-decoration: none;
+}
+
+.marquee span:hover {
+    animation-play-state: paused;
+    cursor: pointer;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translate(-50%, 0);
+    }
+    100% {
+        transform: translate(-70%, 0);
+    }
+}
+
+.visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
+p{
+  /*margin:0;*/
 }
