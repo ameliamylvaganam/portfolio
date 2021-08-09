@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+
+  <head>
+    <title>project list</title>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+    :root {
+      --pagebg:  hsl(200, 50%, 60%); /*blue*/
+      --darkerbg: hsl(215, 50%, 50%);
+      --detail:  hsl(350, 80%, 70%);
+      --detail2:  #ffffff; /*white*/
+    }
+    *{cursor: url(library/cursors/cloud.png), default;}
+
+    .marquee {
+      top: 0;
+      background: var(--darkerbg);
+
+      font-size: 40px;
+      letter-spacing: 0.2em;
+      line-height: 60px;
+    }
+    .marquee span {
+      animation: marquee 15s linear infinite;
+    }
+    @keyframes marquee {
+      0% {
+        transform: translate(0%, 0);
+      }
+      100% {
+        transform: translate(-30%, 0);
+      }
+    }
+
+    .marquee a:link{
+      color:  var(--detail);
+    }
+    .marquee a:visited{
+      color:  var(--detail);
+    }
+    .marquee a:hover{
+      color:  var(--detail2);
+    }
+
+    /* unvisited link*/
+    a:link{
+      color: var(--detail2);
+    }
+    /* visited link*/
+    a:visited{
+      color: var(--detail2);
+    }
+    /* mouse over link */
+    a:hover {
+      color: var(--detail);
+      text-decoration: none;
+      /*cursor: url(moonemoji.png), pointer;*/
+    }
+    body{ /*med purple*/
+      background-color: var(--pagebg);
+      color: #ffffff;
+      font-family: "Helvetica", sans-serif;
+      font-size: 16px;
+      margin-left: 30px;
+      text-decoration: underline;
+    }
+    p{
+      color: #ffffff;
+    }
+    </style>
+  </head>
+
+  <body>
+    <p class="marquee">
+       <span>
+           <a href = "index.html">back to home -- back to home -- back to home -- back
+             to home -- back to home -- back to home -- back to home -- back to home -- back to home -- </a>
+       </span>
+    </p><br><br>
+
+    <a href="https://vimeo.com/538700142" target="_blank">toast</a>
+    <br>
+    <a href="https://vimeo.com/525338245" target="_blank"><i>WINDOWS</i></a>
+    <br>
+    <a href="https://twitter.com/foodmemorybot" target="_blank">@foodmemorybot</a>
+    <br>
+    <a href="https://youtu.be/wXBhtWenOj8" target="_blank">"heavy" by luv lee</a>
+    <br>
+    <a href="http://dearjournal.xyz" target="_blank">dearjournal.xyz</a>
+    <br>
+    <a href="https://vimeo.com/554375368" target="_blank">flowers</a>
+
+  </body>
+
+</html>

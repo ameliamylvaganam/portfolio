@@ -2,41 +2,67 @@
 <html>
 
   <head>
-    <title>about amelia</title>
+    <title>about mia</title>
     <link rel="stylesheet" href="style.css">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
-    *{cursor: url(cloudcursor.png), default;}
+    :root {
+      --pagebg:  hsl(275, 60%, 60%); /*purple*/
+      --detail: hsl(55, 80%, 60%); /*mustard*/
+      --detail2: #ffffff; /*white*/
+      --detail3: #000000; /*black*/
+    }
+    *{cursor: url(library/cursors/sun.png), default;}
+
     .marquee {
-        background: #ffffff;
-        font-size: 30px;
-        letter-spacing: 0.2em;
-        line-height: 50px;
-        font-family: "Helvetica", sans-serif;
+      top: 0;
+      background: var(--detail2);
+
+      font-size: 40px;
+      letter-spacing: 0.2em;
+      line-height: 60px;
     }
-    /* unvisited link*/
-    a:link{
-      color: #000000;
+    .marquee span {
+      animation: marquee 15s linear infinite;
     }
-    /* visited link*/
-    a:visited{
-      color: #000000;
+    @keyframes marquee {
+      0% {
+        transform: translate(0%, 0);
+      }
+      100% {
+        transform: translate(-30%, 0);
+      }
     }
-    /* mouse over link */
-    a:hover {
-      color: hsl(215, 100%, 20%);
+
+    .marquee a:hover {
+      color: var(--pagebg);
       text-decoration: none;
       /*cursor: url(moonemoji.png), pointer;*/
     }
-    body{ /*dark lightning sky*/
-      background-color: hsl(215, 100%, 20%);
-      color: #ffffff;
-      font-family: "Arial", Times, serif;
+
+    /* unvisited link*/
+    a:link{
+      color: var(--detail);
+    }
+    /* visited link*/
+    a:visited{
+      color: var(--detail);
+    }
+    /* mouse over link */
+    a:hover {
+      color: var(--detail3);
+      text-decoration: none;
+      /*cursor: url(moonemoji.png), pointer;*/
+    }
+    body{ /*med purple*/
+      background-color: var(--pagebg);
+      color: var(--detail2);
+      font-family: "Helvetica", sans-serif;
       font-size: 14px;
     }
     p{
-      color: #ffffff;
+      color: var(--detail2);
     }
     </style>
   </head>
@@ -48,14 +74,14 @@
              to home, back to home, back to home, back to home, back to home, back to home,</a>
        </span>
     </p><br><br>
-    Amelia Mylvaganam is a really cool gal who likes to take flash photos and bake
+    Mia_Mylva is a really cool gal who likes to take flash photos and bake
     chocolate cake. she studies film and computer science and isn't really sure
     what she wants to do with her life, as long as it involves all of the aforementioned
     elements.
     please scroll through her wonderful portfolio site and enjoy the decor along the way.<br><br>
-    email her at <a style="color:red" href = "mailto: ameliamylvaganam2023@u.northwestern.edu">ameliamylvaganam2023@u.northwestern.edu</a><br>
+    email her at <a href = "mailto: ameliamylvaganam2023@u.northwestern.edu">ameliamylvaganam2023@u.northwestern.edu</a><br>
 
-    <a style="color:red" target="_blank" href="https://docs.google.com/presentation/d/14mae7e1mxIjsb_kKA1LPmVOu_Flye0qZvSoCRcM3Dro/edit?usp=sharing">resume</a>
+    <a target="_blank" href="https://docs.google.com/presentation/d/14mae7e1mxIjsb_kKA1LPmVOu_Flye0qZvSoCRcM3Dro/edit?usp=sharing">resume</a>
   </body>
 
 </html>

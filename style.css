@@ -1,40 +1,48 @@
-*{cursor: url(library/cursors/sunemoji.png), default;}
-
+*{cursor: url(library/cursors/moon.png), default;}
+:root {
+      --orange: hsl(25, 100%, 55%);
+      --pagebg: hsl(27, 50%, 75%);
+    }
 body {
-  background-color: hsl(25, 100%, 55%);
+  background-color: var(--pagebg);
   font-family: "Helvetica", sans-serif;
   font-size: 18px;
   line-height: 35px;
 }
 
 p{
-  color: #ffffff;
+    color: #ffffff;
 }
 
 h1 {
-  text-align: center;
-  letter-spacing: 0.4em;
-  margin-top: 5px;
-  margin-bottom: 0px;
+    text-align: center;
+    letter-spacing: 0em;
+    margin-top: 15px;
+    font-size: 35px;
+}
+h2 {
+    text-align:  left;
+    margin-left: 15px;
+    font-size: 20px;
 }
 
 /* unvisited link */
 a:link {
-  color: #ffffff;
+  color:  #000000;
   text-decoration: none;
 }
 
 /* visited link */
 a:visited {
-  color: #ffffff;
+  color:  #000000;
   text-decoration: none;
 }
 
 /* mouse over link */
 a:hover {
-  color: hsl(25, 100%, 55%);
+  color: #ffffff;
   text-decoration: none;
-  cursor: url(library/cursors/moonemoji.png), pointer;
+  /*cursor: url(library/cursors/moonemoji.png), pointer;*/
 }
 
 /* selected link */
@@ -44,53 +52,16 @@ a:active {
 }
 
 /*for all marquees exc. photo reel*/
-.marquee span:hover,
-.toast span:hover,
-.heavy span:hover,
-.journal span:hover,
-.twtbot span:hover,
-.flowers span:hover,
-.windows span:hover {
+.marquee span:hover{
     animation-play-state: paused;
-    cursor: pointer;
+    /*cursor: pointer;*/
 }
 
-/* header */
-.marquee {
-    position: absolute;
-    top: 0;
-    left: 0;
-
-    width: 100%;
-    margin: 0 auto;
-    white-space: nowrap;
-    overflow: hidden;
-    box-sizing: border-box;
-    background: #000000;
-
-    font-size: 80px;
-    letter-spacing: 0.2em;
-    line-height: 100px;
-    z-index: 99999999;
-}
-.marquee span {
-    display: inline-block;
-    will-change: transform;
-    animation: marquee 15s linear infinite;
-}
-@keyframes marquee {
-    0% {
-        transform: translate(0%, 0);
-    }
-    100% {
-        transform: translate(-30%, 0);
-    }
-}
 
 /* photo reel */
-.marquee2 {
+.marquee {
     position: absolute;
-    top: 180px;
+    top: 25vh;
     left: 0;
 
     width: 100%;
@@ -102,213 +73,21 @@ a:active {
 
 
     letter-spacing: 0;
-    line-height: 200px;
+    line-height: 250px;
     z-index: 99999999;
 }
-.marquee2 span {
+.marquee span {
     display: inline-block;
     will-change: transform;
-    animation: marquee2 15s linear infinite;
+    animation: marquee 45s linear infinite;
 }
-@keyframes marquee2 {
+@keyframes marquee {
   0% {
-    transform: translate(-15%, 0);
+    transform: translate(-70%, 0);
   }
   100% {
     transform: translate(0%, 0);
   }
-}
-
-/* toast */
-.toast {
-    position: absolute;
-    top: 460px;
-    left: 0;
-
-    width: 100%;
-    margin: 0 auto;
-    white-space: nowrap;
-    overflow: hidden;
-    box-sizing: border-box;
-    background: #000000;
-
-    font-size: 20px;
-    letter-spacing: 0.2em;
-    line-height: 30px;
-    z-index: 99999999;
-}
-.toast span {
-    display: inline-block;
-    will-change: transform;
-    animation: toast 15s linear infinite;
-}
-@keyframes toast {
-    0% {
-        transform: translate(-35%, 0);
-    }
-    100% {
-        transform: translate(0%, 0);
-    }
-}
-
-/* "heavy" by luv lee */
-.heavy {
-    position: absolute;
-    top: 490px;
-    left: 0;
-
-    width: 100%;
-    margin: 0 auto;
-    white-space: nowrap;
-    overflow: hidden;
-    box-sizing: border-box;
-    background: #000000;
-
-    font-size: 20px;
-    letter-spacing: 0.2em;
-    line-height: 30px;
-    z-index: 99999999;
-}
-.heavy span {
-    display: inline-block;
-    will-change: transform;
-    animation: heavy 15s linear infinite;
-}
-@keyframes heavy {
-    0% {
-        transform: translate(0%, 0);
-    }
-    100% {
-        transform: translate(-35%, 0);
-    }
-}
-
-/* dearjournal.xyz */
-.journal {
-    position: absolute;
-    top: 520px;
-    left: 0;
-
-    width: 100%;
-    margin: 0 auto;
-    white-space: nowrap;
-    overflow: hidden;
-    box-sizing: border-box;
-    background: #000000;
-
-    font-size: 20px;
-    letter-spacing: 0.2em;
-    line-height: 30px;
-    z-index: 99999999;
-}
-.journal span {
-    display: inline-block;
-    will-change: transform;
-    animation: journal 15s linear infinite;
-}
-@keyframes journal {
-    0% {
-        transform: translate(-35%, 0);
-    }
-    100% {
-        transform: translate(0%, 0);
-    }
-}
-
-/* @foodmemorybot */
-.twtbot {
-    position: absolute;
-    top: 550px;
-    left: 0;
-
-    width: 100%;
-    margin: 0 auto;
-    white-space: nowrap;
-    overflow: hidden;
-    box-sizing: border-box;
-    background: #000000;
-
-    font-size: 20px;
-    letter-spacing: 0.2em;
-    line-height: 30px;
-    z-index: 99999999;
-}
-.twtbot span {
-    display: inline-block;
-    will-change: transform;
-    animation: twtbot 15s linear infinite;
-}
-@keyframes twtbot {
-    0% {
-        transform: translate(0%, 0);
-    }
-    100% {
-        transform: translate(-35%, 0);
-    }
-}
-
-/* flowers */
-.flowers {
-    position: absolute;
-    top: 580px;
-    left: 0;
-
-    width: 100%;
-    margin: 0 auto;
-    white-space: nowrap;
-    overflow: hidden;
-    box-sizing: border-box;
-    background: #000000;
-
-    font-size: 20px;
-    letter-spacing: 0.2em;
-    line-height: 30px;
-    z-index: 99999999;
-}
-.flowers span {
-    display: inline-block;
-    will-change: transform;
-    animation: flowers 15s linear infinite;
-}
-@keyframes flowers {
-    0% {
-        transform: translate(-35%, 0);
-    }
-    100% {
-        transform: translate(0%, 0);
-    }
-}
-
-/* WINDOWS */
-.windows {
-    position: absolute;
-    top: 610px;
-    left: 0;
-
-    width: 100%;
-    margin: 0 auto;
-    white-space: nowrap;
-    overflow: hidden;
-    box-sizing: border-box;
-    background: #000000;
-
-    font-size: 20px;
-    letter-spacing: 0.2em;
-    line-height: 30px;
-    z-index: 99999999;
-}
-.windows span {
-    display: inline-block;
-    will-change: transform;
-    animation: windows 15s linear infinite;
-}
-@keyframes windows {
-    0% {
-        transform: translate(0%, 0);
-    }
-    100% {
-        transform: translate(-35%, 0);
-    }
 }
 
 
