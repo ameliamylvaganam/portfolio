@@ -36,7 +36,7 @@ a:visited {
 a:hover {
   color: #ffffff;
   text-decoration: none;
-  /*cursor: url(library/cursors/moonemoji.png), pointer;*/
+  cursor: pointer;
 }
 
 /* selected link */
@@ -58,12 +58,9 @@ a:active {
 }
 
 
-
-
-/*for all marquees exc. photo reel*/
 .marquee span:hover{
     animation-play-state: paused;
-    /*cursor: pointer;*/
+    cursor: pointer;
 }
 
 
