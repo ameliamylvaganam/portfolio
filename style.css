@@ -13,6 +13,17 @@ p{
     color: #ffffff;
 }
 
+.story{
+    position: absolute;
+    top: calc(20vh + 250px + 40px);
+    font-size: 14px;
+    line-height: 1.5em;
+    font-family: monospace;
+    color: black;
+    margin: 0px 15px 0px;
+    
+}
+
 h1 {
     text-align: center;
     letter-spacing: 0em;
@@ -67,7 +78,7 @@ a:active {
 /* photo reel */
 .marquee {
     position: absolute;
-    top: 25vh;
+    top: 20vh;
     left: 0;
     font-size: 0px;
 
