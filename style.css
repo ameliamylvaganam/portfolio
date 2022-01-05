@@ -1,6 +1,6 @@
 *{cursor: url(library/cursors/moon.png), default;}
 :root {
-      --pagebg: hsl(27, 50%, 75%);
+      --pagebg: #ff85f7;
     }
 body {
   background-color: var(--pagebg);
