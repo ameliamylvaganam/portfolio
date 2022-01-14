@@ -56,7 +56,7 @@ a:hover {
 #_5 {
     top: 91%;
     left: 24%;
-    color: cornflowerblue;
+    color: lightseagreen;
 }
 
 #_6 {
@@ -105,6 +105,18 @@ a:hover {
     top: 88%;
     left: 56%;
     color: navy;
+}
+
+#_14 {
+    top: 37%;
+    left: 38%;
+    color: dodgerblue;
+}
+
+#_15 {
+    top: 9%;
+    left: 57%;
+    color: mediumslateblue;
 }
 
 .itemgrid{
