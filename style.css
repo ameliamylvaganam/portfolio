@@ -74,7 +74,7 @@ a:hover {
 #_8 {
     top: 36%;
     left: 70%;
-    color: darkblue;
+    color: orangered;
 }
 
 #_9 {
@@ -95,11 +95,23 @@ a:hover {
     color: gold;
 }
 
+#_12 {
+    top: 25%;
+    left: 44%;
+    color: firebrick;
+}
+
+#_13 {
+    top: 88%;
+    left: 56%;
+    color: navy;
+}
+
 .itemgrid{
-    width: 90vw;
+    width: 100%;
     height: 70vh;
     padding: 0;
-    margin: 2vw;
+    margin: 0;
     border: 1px solid fuchsia;
 
     position: relative;
@@ -133,18 +145,20 @@ a:hover {
     color: black;
     margin: 0px 2vw 0px; 
 }
-/*
+
 h1 {
     text-align: center;
     letter-spacing: 0em;
     margin-top: 15px;
     font-size: 35px;
+    fon
 }
-*/
 
 
 .nav{
     margin-top: 3vh;
+    margin-left: 2vh;
+    margin-right: 2vh;
     display: flex;
     justify-content: space-between;
 }
@@ -195,6 +209,7 @@ h1 {
     position: fixed;
     bottom: 0px;
     font-size:  9px;
+    line-height: 1em;
     font-family:  monospace;
     text-align:  center;
     width:  100%;
