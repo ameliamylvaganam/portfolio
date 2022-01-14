@@ -1,1 +1,1 @@
-my current portfolio as alter ego artist/coder Mia Mylva
+my current portfolio as artist/coder Mia Mylvaganam
