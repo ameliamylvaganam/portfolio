@@ -1,1 +1,1 @@
-my current portfolio as artist/coder Mia Mylvaganam
+portfolio / fan site for Mia Mylvaganam. pure HTML and CSS!
