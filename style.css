@@ -74,7 +74,7 @@ a:hover {
 #_8 {
     top: 36%;
     left: 70%;
-    color: orangered;
+    color: yellow;
 }
 
 #_9 {
@@ -128,6 +128,23 @@ a:hover {
     top: 61%;
     left: 35%;
     color: orange;
+}
+
+#_18 {
+    top: 68%;
+    left: 98%;
+    color: orangered;
+}
+#_19 {
+    top: 70%;
+    left: 74%;
+    color: darkolivegreen;
+}
+
+#_20 {
+    top: 87%;
+    left: 94%;
+    color: saddlebrown;
 }
 
 .itemgrid{
