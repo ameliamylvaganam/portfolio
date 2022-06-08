@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>fire, contained</title>
+    <style>
+      body{
+  font-family: Helvetica, sans-serif;
+  color: orangered;
+  background-color: maroon;
+  line-height: 1.3em;
+  font-size: 15px;
+  letter-spacing: 0.01em;
+}
+
+a:link{
+  color: orangered;
+
+}
+a:visited{
+  color: orangered;
+
+}
+a:hover{
+  color: white;
+  text-decoration: none;
+}
+
+h1{
+  text-align: center;
+  color: red;
+  font-size: 70px;
+
+  font-family: cursive;
+}
+
+#intro{
+  text-align: right;
+  margin: 30px;
+  color: orangered;
+}
+
+.text{
+  margin-left: auto;
+  margin-right: auto;
+  width: 45vw;
+  color: darkorange;
+  text-align: justify;
+}
+
+#page-wrap{
+  position: relative;
+  min-height: 97vh;
+}
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  /*
+  font-size: 80%;
+  font-weight: bold;*/
+  height: 2rem;
+  font-family: cursive;
+}
+
+#footer-wrap {
+  padding-bottom: 2rem;
+}
+    </style>
+  </head>
+  <body>
+    <div id="page-wrap">
+      <h1>fire, contained</h1>
+
+      <div id="intro">
+        <a href="https://mia.wiki">Mia Mylvaganam</a><br />
+        <a href="mailto: mylvaganam@u.northwestern.edu"
+          >mylvaganam@u.northwestern.edu</a
+        ><br />
+        CS497 Digital Musical Instrument Design<br />
+        @ Northwestern University<br />
+      </div>
+
+      <div class="text">
+        One day in the sixth grade I was home alone, making mozzarella sticks. I
+        stepped away to attend to other business (the hit tv show Shake It Up)
+        and when I returned, there was a 3-foot fire extending upwards from the
+        pot, licking the spice cabinets above it.
+        <br /><br />
+        Through this class I've developed and specified an interest in how
+        instruments and installations can respond to the environment they're
+        placed in, the environment that users bring to them, and other
+        conceptualizations of internalizing external changing factors. To
+        explore environmental interactions through an instrument of my own,
+        after much deliberation, I chose fire.
+        <br /><br />
+        This instrument responds to fire with fire-related sounds. First I
+        employed randomness, a concept arguably distant from nature. The loud
+        whoosh of a fire blooming plays at random time intervals between 0 to
+        100 seconds. As the instrument heats up in the presence of fire, the
+        volume of a crackling campfire sample increases and slowly fills the
+        space. But don't let it get too hot! When the sensor heats up
+        significantly, the smoke alarm goes off, the speed of which can be
+        controlled with the physical potentiometer, morphing the classic smoke
+        alarm sound into a series of low-pitched background patterns (if that's
+        the route you choose). It continues to beep until the instrument cools
+        down enough.
+        <br /><br />
+        <a href="demo link">here's a demo</a> if you're interested
+
+        <br /><br />
+        It's constructed very simply. The two physical controls are the
+        outwardly-extending temperature sensor &#40;for ease of manipulation and
+        movement&#41; and the breadboard-mounted potentiometer which controls
+        the smoke alarm speed. This data is sent to a Max patch that produces
+        three sounds: fire starting, crackling campfire, and smoke alarm.
+        <br /><br />
+        In the process of making this instrument, I explored many different ways
+        of interacting with it and ultimately decided on the safety and
+        confinement of a candle. I wish there was a more immersive or engulfing
+        performance that could be had with this instrument that would not be
+        dangeorus, but I suppose compromise is necessary when working with fire.
+        <br /><br />
+        While testing and performing, I've melted the plastic shell of the
+        temperature sensor pretty irreparably. Luckily it still works, and
+        nothing unsafe beyond that has transpired.
+        <br /><br />
+        Feel free to add things about lessons learned and how you might go about
+        making a version 2 of this.
+      </div>
+
+      <div id="footer-wrap">
+        <div id="footer">fire, contained&nbsp;&nbsp;&nbsp;&nbsp;june 2022</div>
+      </div>
+    </div>
+  </body>
+</html>
