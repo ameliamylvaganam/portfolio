@@ -163,13 +163,13 @@ a:hover {
 .item {
     position: absolute;
     line-height: 0;
-    font-size: 20px;
+    font-size: 45px;
 }
 
 .hoveritem {
     position: relative;
     display: none;
-    font-size: 0.6em;
+    font-size: 0.3em;
 }
 
 .item:hover .hoveritem {
