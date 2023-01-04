@@ -1,4 +1,4 @@
-*{cursor: url(library/cursor.png), default;}
+/**{cursor: url(library/cursor.png), default;}*/
 
 :root {
       --pagebg: #fdfcfe;
@@ -24,157 +24,24 @@ a:visited {
 
 /* mouse over link */
 a:hover {
-  color: fuchsia;
+  color: #cc3204;
   text-decoration: none;
   cursor: pointer;
 }
 
-#_1 {
-    top: 87%;
-    left: 89%;
-    color: red;
-}
-
-#_2 {
-    top: 9%;
-    left: 37%;
-    color: blue;
-}
-
-#_3 {
-    top: 63%;
-    left: 81%;
-    color: aqua;
-}
-
-#_4 {
-    top: 56%;
-    left: 44%;
-    color: blueviolet;
-}
-
-#_5 {
-    top: 91%;
-    left: 24%;
-    color: lightseagreen;
-}
-
-#_6 {
-    top: 49%;
-    left: 84%;
-    color: chocolate;
-}
-
-#_7 {
-    top: 16%;
-    left: 29%;
-    color: chartreuse;
-}
-
-#_8 {
-    top: 36%;
-    left: 70%;
-    color: yellow;
-}
-
-#_9 {
-    top: 74%;
-    left: 9%;
-    color: darkgreen;
-}
-
-#_10 {
-    top: 93%;
-    left: 5%;
-    color: coral;
-}
-
-#_11 {
-    top: 33%;
-    left: 37%;
-    color: gold;
-}
-
-#_12 {
-    top: 25%;
-    left: 44%;
-    color: firebrick;
-}
-
-#_13 {
-    top: 88%;
-    left: 56%;
-    color: navy;
-}
-
-#_14 {
-    top: 37%;
-    left: 38%;
-    color: dodgerblue;
-}
-
-#_15 {
-    top: 9%;
-    left: 57%;
-    color: mediumslateblue;
-}
-
-#_16 {
-    top: 47%;
-    left: 94%;
-    color: pink;
-}
-#_17 {
-    top: 61%;
-    left: 35%;
-    color: orange;
-}
-
-#_18 {
-    top: 61%;
-    left: 63%;
-    color: orangered;
-}
-#_19 {
-    top: 70%;
-    left: 74%;
-    color: darkolivegreen;
-}
-
-#_20 {
-    top: 87%;
-    left: 94%;
-    color: saddlebrown;
-}
-
-.itemgrid{
-    width: 100%;
-    height: 70vh;
-    padding: 0;
-    margin: 0;
-    border: 1px solid fuchsia;
-
-    position: relative;
-    font-size: 16px;
-    line-height: 1.5em;
-    font-family: sans-serif;
-}
-
-.item {
-    position: absolute;
-    line-height: 0;
-    font-size: 45px;
-}
-
-.hoveritem {
-    position: relative;
-    display: none;
-    font-size: 0.3em;
-}
-
-.item:hover .hoveritem {
+#mainimg {
+    /* width: 50%;
+    
+    margin: 10px;
+    display: block; */
+    max-width: 50vw;
+    height: auto;
+    
     display: block;
-    /*font-style: italic;*/
+    margin-left: auto;
+    margin-right: auto;
+
+    border: 1px solid #cc3204; padding:40px;
 }
 
 .pgtext{
@@ -191,7 +58,6 @@ h1 {
     letter-spacing: 0em;
     margin-top: 15px;
     font-size: 35px;
-    fon
 }
 
 
